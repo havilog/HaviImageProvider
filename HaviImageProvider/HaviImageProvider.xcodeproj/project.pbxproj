@@ -13,6 +13,13 @@
 		401B5E5F2BF0BC7A00D953B2 /* ImageCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E5E2BF0BC7A00D953B2 /* ImageCachable.swift */; };
 		401B5E612BF0BD2B00D953B2 /* ImageCacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E602BF0BD2B00D953B2 /* ImageCacheOptions.swift */; };
 		401B5E632BF0BE0400D953B2 /* ImageCacheValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E622BF0BE0400D953B2 /* ImageCacheValidator.swift */; };
+		401B5E6B2BF4E81B00D953B2 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E6A2BF4E81B00D953B2 /* MemoryStorage.swift */; };
+		401B5E6D2BF4E85900D953B2 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E6C2BF4E85900D953B2 /* ImageStorage.swift */; };
+		401B5E6F2BF4E8AE00D953B2 /* ImageStoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E6E2BF4E8AE00D953B2 /* ImageStoreKey.swift */; };
+		401B5E712BF4EB2200D953B2 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E702BF4EB2200D953B2 /* DiskStorage.swift */; };
+		401B5E732BF4ED9100D953B2 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E722BF4ED9100D953B2 /* CryptoManager.swift */; };
+		401B5E752BF4F29600D953B2 /* DiskStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E742BF4F29600D953B2 /* DiskStorageTests.swift */; };
+		401B5E772BF4FA0E00D953B2 /* MemoryStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E762BF4FA0E00D953B2 /* MemoryStorageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,13 @@
 		401B5E5E2BF0BC7A00D953B2 /* ImageCachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCachable.swift; sourceTree = "<group>"; };
 		401B5E602BF0BD2B00D953B2 /* ImageCacheOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheOptions.swift; sourceTree = "<group>"; };
 		401B5E622BF0BE0400D953B2 /* ImageCacheValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheValidator.swift; sourceTree = "<group>"; };
+		401B5E6A2BF4E81B00D953B2 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		401B5E6C2BF4E85900D953B2 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
+		401B5E6E2BF4E8AE00D953B2 /* ImageStoreKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStoreKey.swift; sourceTree = "<group>"; };
+		401B5E702BF4EB2200D953B2 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		401B5E722BF4ED9100D953B2 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		401B5E742BF4F29600D953B2 /* DiskStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorageTests.swift; sourceTree = "<group>"; };
+		401B5E762BF4FA0E00D953B2 /* MemoryStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +92,8 @@
 				401B5E492BF0BC6500D953B2 /* HaviImageProvider.h */,
 				401B5E5E2BF0BC7A00D953B2 /* ImageCachable.swift */,
 				401B5E602BF0BD2B00D953B2 /* ImageCacheOptions.swift */,
-				401B5E622BF0BE0400D953B2 /* ImageCacheValidator.swift */,
+				401B5E792BF4FA8E00D953B2 /* Helpers */,
+				401B5E782BF4FA7D00D953B2 /* Storages */,
 			);
 			path = HaviImageProvider;
 			sourceTree = "<group>";
@@ -87,8 +102,30 @@
 			isa = PBXGroup;
 			children = (
 				401B5E532BF0BC6600D953B2 /* ImageCacheValidatorTests.swift */,
+				401B5E742BF4F29600D953B2 /* DiskStorageTests.swift */,
+				401B5E762BF4FA0E00D953B2 /* MemoryStorageTests.swift */,
 			);
 			path = HaviImageProviderTests;
+			sourceTree = "<group>";
+		};
+		401B5E782BF4FA7D00D953B2 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				401B5E6C2BF4E85900D953B2 /* ImageStorage.swift */,
+				401B5E6E2BF4E8AE00D953B2 /* ImageStoreKey.swift */,
+				401B5E6A2BF4E81B00D953B2 /* MemoryStorage.swift */,
+				401B5E702BF4EB2200D953B2 /* DiskStorage.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		401B5E792BF4FA8E00D953B2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				401B5E622BF0BE0400D953B2 /* ImageCacheValidator.swift */,
+				401B5E722BF4ED9100D953B2 /* CryptoManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401B5E6B2BF4E81B00D953B2 /* MemoryStorage.swift in Sources */,
+				401B5E712BF4EB2200D953B2 /* DiskStorage.swift in Sources */,
+				401B5E732BF4ED9100D953B2 /* CryptoManager.swift in Sources */,
 				401B5E5F2BF0BC7A00D953B2 /* ImageCachable.swift in Sources */,
+				401B5E6D2BF4E85900D953B2 /* ImageStorage.swift in Sources */,
+				401B5E6F2BF4E8AE00D953B2 /* ImageStoreKey.swift in Sources */,
 				401B5E612BF0BD2B00D953B2 /* ImageCacheOptions.swift in Sources */,
 				401B5E632BF0BE0400D953B2 /* ImageCacheValidator.swift in Sources */,
 			);
@@ -211,6 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401B5E752BF4F29600D953B2 /* DiskStorageTests.swift in Sources */,
+				401B5E772BF4FA0E00D953B2 /* MemoryStorageTests.swift in Sources */,
 				401B5E542BF0BC6600D953B2 /* ImageCacheValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
