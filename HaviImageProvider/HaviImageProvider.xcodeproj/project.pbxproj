@@ -20,6 +20,7 @@
 		401B5E732BF4ED9100D953B2 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E722BF4ED9100D953B2 /* CryptoManager.swift */; };
 		401B5E752BF4F29600D953B2 /* DiskStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E742BF4F29600D953B2 /* DiskStorageTests.swift */; };
 		401B5E772BF4FA0E00D953B2 /* MemoryStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E762BF4FA0E00D953B2 /* MemoryStorageTests.swift */; };
+		401B5E7B2BF4FAEB00D953B2 /* CryptoManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E7A2BF4FAEB00D953B2 /* CryptoManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		401B5E722BF4ED9100D953B2 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
 		401B5E742BF4F29600D953B2 /* DiskStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorageTests.swift; sourceTree = "<group>"; };
 		401B5E762BF4FA0E00D953B2 /* MemoryStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorageTests.swift; sourceTree = "<group>"; };
+		401B5E7A2BF4FAEB00D953B2 /* CryptoManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				401B5E532BF0BC6600D953B2 /* ImageCacheValidatorTests.swift */,
 				401B5E742BF4F29600D953B2 /* DiskStorageTests.swift */,
 				401B5E762BF4FA0E00D953B2 /* MemoryStorageTests.swift */,
+				401B5E7A2BF4FAEB00D953B2 /* CryptoManagerTests.swift */,
 			);
 			path = HaviImageProviderTests;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				401B5E752BF4F29600D953B2 /* DiskStorageTests.swift in Sources */,
 				401B5E772BF4FA0E00D953B2 /* MemoryStorageTests.swift in Sources */,
+				401B5E7B2BF4FAEB00D953B2 /* CryptoManagerTests.swift in Sources */,
 				401B5E542BF0BC6600D953B2 /* ImageCacheValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
