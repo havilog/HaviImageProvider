@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class DiskStorage: ImageStorage {
-  private let fileManager: FileManager
+final actor DiskStorage: ImageStorage {
+  private let fileManager: FileManager = .default
   private let cryptoManager: CryptoManager
   
   private var diskCacheURL: URL {
@@ -23,11 +23,7 @@ final class DiskStorage: ImageStorage {
     )
   }
   
-  init(
-    fileManager: FileManager = .default,
-    cryptoManager: CryptoManager = .init()
-  ) {
-    self.fileManager = fileManager
+  init(cryptoManager: CryptoManager = .init()) {
     self.cryptoManager = cryptoManager
   }
   

@@ -7,12 +7,12 @@
 
 import Foundation
 
-final class MemoryStorage: ImageStorage {
-  let cache: NSCache<NSString, NSData>
+final actor MemoryStorage: ImageStorage {
+  private let cache: NSCache<NSString, NSData> = .init()
   
-  init(cache: NSCache<NSString, NSData> = .init()) {
-    self.cache = cache
-    self.cache.totalCostLimit = 20_000_000 // 20mb
+  /// - Parameter totalCostLimit: 20mb
+  init(totalCostLimit: Int = 20_000_000) {
+    self.cache.totalCostLimit = totalCostLimit
   }
   
   func store(_ data: Data, for key: any ImageStoreKey) {
@@ -30,4 +30,7 @@ final class MemoryStorage: ImageStorage {
   func removeAll() {
     self.cache.removeAllObjects()
   }
+  
+  // TODO: 엄청나게 많은 저장 해보기
+  // TODO: 메모리 워닝 받을 시 지우는 거 해보기
 }
