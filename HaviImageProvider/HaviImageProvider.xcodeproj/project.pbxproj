@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		401B5E4F2BF0BC6600D953B2 /* HaviImageProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401B5E462BF0BC6500D953B2 /* HaviImageProvider.framework */; };
-		401B5E542BF0BC6600D953B2 /* HaviImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E532BF0BC6600D953B2 /* HaviImageProviderTests.swift */; };
+		401B5E542BF0BC6600D953B2 /* ImageCacheValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E532BF0BC6600D953B2 /* ImageCacheValidatorTests.swift */; };
 		401B5E552BF0BC6600D953B2 /* HaviImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 401B5E492BF0BC6500D953B2 /* HaviImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		401B5E5F2BF0BC7A00D953B2 /* ImageCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E5E2BF0BC7A00D953B2 /* ImageCachable.swift */; };
 		401B5E612BF0BD2B00D953B2 /* ImageCacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E602BF0BD2B00D953B2 /* ImageCacheOptions.swift */; };
+		401B5E632BF0BE0400D953B2 /* ImageCacheValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B5E622BF0BE0400D953B2 /* ImageCacheValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,10 @@
 		401B5E462BF0BC6500D953B2 /* HaviImageProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HaviImageProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		401B5E492BF0BC6500D953B2 /* HaviImageProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaviImageProvider.h; sourceTree = "<group>"; };
 		401B5E4E2BF0BC6600D953B2 /* HaviImageProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaviImageProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		401B5E532BF0BC6600D953B2 /* HaviImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaviImageProviderTests.swift; sourceTree = "<group>"; };
+		401B5E532BF0BC6600D953B2 /* ImageCacheValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheValidatorTests.swift; sourceTree = "<group>"; };
 		401B5E5E2BF0BC7A00D953B2 /* ImageCachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCachable.swift; sourceTree = "<group>"; };
 		401B5E602BF0BD2B00D953B2 /* ImageCacheOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheOptions.swift; sourceTree = "<group>"; };
+		401B5E622BF0BE0400D953B2 /* ImageCacheValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				401B5E492BF0BC6500D953B2 /* HaviImageProvider.h */,
 				401B5E5E2BF0BC7A00D953B2 /* ImageCachable.swift */,
 				401B5E602BF0BD2B00D953B2 /* ImageCacheOptions.swift */,
+				401B5E622BF0BE0400D953B2 /* ImageCacheValidator.swift */,
 			);
 			path = HaviImageProvider;
 			sourceTree = "<group>";
@@ -83,7 +86,7 @@
 		401B5E522BF0BC6600D953B2 /* HaviImageProviderTests */ = {
 			isa = PBXGroup;
 			children = (
-				401B5E532BF0BC6600D953B2 /* HaviImageProviderTests.swift */,
+				401B5E532BF0BC6600D953B2 /* ImageCacheValidatorTests.swift */,
 			);
 			path = HaviImageProviderTests;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				401B5E5F2BF0BC7A00D953B2 /* ImageCachable.swift in Sources */,
 				401B5E612BF0BD2B00D953B2 /* ImageCacheOptions.swift in Sources */,
+				401B5E632BF0BE0400D953B2 /* ImageCacheValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401B5E542BF0BC6600D953B2 /* HaviImageProviderTests.swift in Sources */,
+				401B5E542BF0BC6600D953B2 /* ImageCacheValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
