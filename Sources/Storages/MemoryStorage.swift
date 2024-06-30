@@ -7,6 +7,7 @@
 
 import Foundation
 
+#if !os(macOS)
 final actor MemoryStorage: ImageStorage {
   private let cache: NSCache<NSString, NSData> = .init()
   
@@ -34,3 +35,4 @@ final actor MemoryStorage: ImageStorage {
   // TODO: 엄청나게 많은 저장 해보기
   // TODO: 메모리 워닝 받을 시 지우는 거 해보기
 }
+#endif

@@ -7,6 +7,7 @@
 
 import Foundation
 
+#if !os(macOS)
 protocol ImageCacheValidatable {
   func isValid(for key: String) async -> Bool
   func register(data: Data, for key: String) async
@@ -45,3 +46,4 @@ final actor ImageCacheValidator: ImageCacheValidatable {
     self.caches.removeAll()
   }
 } 
+#endif

@@ -8,6 +8,7 @@
 import Foundation
 import CryptoKit
 
+#if !os(macOS)
 protocol Encryptable {
   func encrypt(
     _ data: Data,
@@ -24,3 +25,4 @@ struct CryptoManager: Encryptable {
     return hashedData
   }
 }
+#endif

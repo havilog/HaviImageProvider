@@ -7,6 +7,7 @@
 
 import Foundation
 
+#if !os(macOS)
 final actor DiskStorage: ImageStorage {
   private let fileManager: FileManager = .default
   private let cryptoManager: CryptoManager
@@ -83,3 +84,4 @@ final actor DiskStorage: ImageStorage {
     )
   }
 }
+#endif
