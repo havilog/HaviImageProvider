@@ -1,14 +1,13 @@
 //
 //  CryptoManager.swift
-//  HaviImageProvider
+//  HaviImage
 //
-//  Created by 한상진 on 5/15/24.
+//  Created by 한상진 on 12/18/24.
 //
 
-import Foundation
 import CryptoKit
+import Foundation
 
-#if !os(macOS)
 protocol Encryptable {
   func encrypt(
     _ data: Data,
@@ -25,4 +24,3 @@ struct CryptoManager: Encryptable {
     return hashedData
   }
 }
-#endif

@@ -1,27 +1,34 @@
 //
 //  MemoryStorage.swift
-//  HaviImageProvider
+//  HaviImage
 //
-//  Created by 한상진 on 5/15/24.
+//  Created by 한상진 on 12/18/24.
 //
 
 import Foundation
 
-#if !os(macOS)
-final actor MemoryStorage: ImageStorage {
+final actor MemoryStorage: ImageStorable {
   private let cache: NSCache<NSString, NSData> = .init()
   
-  /// - Parameter totalCostLimit: 20mb
-  init(totalCostLimit: Int = 20_000_000) {
+  /// - Parameter 
+  /// `totalCostLimit`: 20mb
+  /// `countLimit`: 최대 50개 
+  init(
+    totalCostLimit: Int = 20_000_000,
+    countLimit: Int = 50
+  ) {
     self.cache.totalCostLimit = totalCostLimit
+    self.cache.countLimit = countLimit
   }
   
   func store(_ data: Data, for key: any ImageStoreKey) {
     self.cache.setObject(data as NSData, forKey: key.hashValue as NSString)
+    
   }
   
   func load(for key: any ImageStoreKey) -> Data? {
-    return self.cache.object(forKey: key.hashValue as NSString) as? Data
+    let data = self.cache.object(forKey: key.hashValue as NSString) as? Data
+    return data
   }
   
   func removeValue(for key: any ImageStoreKey) {
@@ -31,8 +38,4 @@ final actor MemoryStorage: ImageStorage {
   func removeAll() {
     self.cache.removeAllObjects()
   }
-  
-  // TODO: 엄청나게 많은 저장 해보기
-  // TODO: 메모리 워닝 받을 시 지우는 거 해보기
 }
-#endif
